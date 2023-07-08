@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is a learning project">
+    <title>music-player-js</title>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/b766a53cfd.js" crossorigin="anonymous"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <!-- nav -->
+        <nav class="nav flex">
+            <!-- logo -->
+            <div class="logo flex">
+                <img src="img/logo-main.png" alt="logo image">
+                <h2>agile<span>Point</span>.</h2>
+            </div>
+
+            <!-- nav button -->
+            <button type="button" class="nav-btn btn">Inspire me</button>
+        </nav>
+        
+        <!-- hero -->
+        <div class="hero flex">
+            <div class="music-player">
+                
+                <h2 class="heading">MUSIC PLAYER</h2>
+
+                <nav class="player-nav flex">
+                    <div class="circle">
+                        <i class="fas fa-angle-left"></i>
+                    </div>
+                    <div class="circle">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </nav>
+
+                <img src="media/Abdulla.png" alt="PhotoOfAbdulla" class="song-img">
+
+                <h3>Manike Mage Hithe</h3>
+                <p>Unknown artist</p>
+
+                <!-- <audio controls id="song">
+                    <source src="media/Manike Mage Hithe.mp3" type="audio/mpeg">
+                </audio> -->
+
+                <audio  id="song">
+                    <source src="media/Manike Mage Hithe.mp3" type="audio/mpeg">
+                </audio>
+
+                <input type="range" value="0" id="progress">
+
+                <div class="controls flex">
+                    <div><i class="fas fa-backward"></i></div>
+                    <div onclick="playPause()">
+                        <i class="fas fa-play" id="ctrlIcon"></i>
+                    </div>
+                    <div><i class="fas fa-forward"></i></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+
+
+    <!-- footer -->
+    <footer>
+        <p>&copy; <a href="#"><b>agile</b>Point.</a>&bullet; July 08, 2023</p>
+        <p><a href="#">Khorshed Alam</a></p>
+    </footer>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
+
+<!-- 19:07 -->
